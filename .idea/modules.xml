@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Main/Main.iml" filepath="$PROJECT_DIR$/Main/Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Products/Products.iml" filepath="$PROJECT_DIR$/Products/Products.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Users/Users.iml" filepath="$PROJECT_DIR$/Users/Users.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Users/product/product.iml" filepath="$PROJECT_DIR$/Users/product/product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vinterProjekt.iml" filepath="$PROJECT_DIR$/vinterProjekt.iml" />
+    </modules>
+  </component>
+</project>
