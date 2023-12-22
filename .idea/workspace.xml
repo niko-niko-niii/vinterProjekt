@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee42e073-9217-4331-9cca-6ea5e9d17994" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/Main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/src/User_Creator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Products/Products.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Users/Users.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Users/src/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Users/src/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vinterProjekt.iml" afterDir="false" />
+    <list default="true" id="ee42e073-9217-4331-9cca-6ea5e9d17994" name="Changes" comment="uh uh">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,10 +58,33 @@
       <updated>1701691514253</updated>
       <workItem from="1701691515250" duration="1474000" />
       <workItem from="1701885002469" duration="7963000" />
+      <workItem from="1702295538884" duration="1318000" />
+      <workItem from="1702653880922" duration="528000" />
     </task>
+    <task id="LOCAL-00001" summary="uh uh">
+      <option name="closed" value="true" />
+      <created>1702295559117</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702295559117</updated>
+    </task>
+    <task id="LOCAL-00002" summary="uh uh">
+      <option name="closed" value="true" />
+      <created>1702295596108</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702295596108</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="uh uh" />
+    <option name="LAST_COMMIT_MESSAGE" value="uh uh" />
   </component>
 </project>
