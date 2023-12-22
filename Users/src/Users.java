@@ -1,15 +1,13 @@
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.NotNull;
-
 import java.io.*;
 import java.util.ArrayList;
 
 public class Users implements Serializable{
-    String name;
-    String password;
+   String name;
+   String password;
     long ID;
 
-    ArrayList<int> cart;
+    ArrayList<Integer> cart =new ArrayList<Integer>();
+
 
     private static long New_ID()  {
 
@@ -26,19 +24,18 @@ public class Users implements Serializable{
 
 
     //child factory
-    public static Admin createAdmin(String name, String password) {
+    public static void createAdmin(String name, String password) {
         long id=Users.New_ID();
 
-        return new Admin(name, password, id);
+        new Admin(name, password, id);
 
     }
 
-
-    public static  Customer createUser(String name, String password) {
+    public static void createCustomer(String name, String password) {
         long id=Users.New_ID();
 
-        return new Customer(name, password, id);
 
+        new Customer(name, password, id);
     }
 
 }
