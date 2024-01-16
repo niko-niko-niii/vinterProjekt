@@ -5,18 +5,7 @@ public class Customer extends Users{
     Customer(String name, String password, long id) {
         this.name=name;
         this.password=password;
+        this.ID=id;
         System.out.println("Customer created");
-    }
-
-    void addItemToCart(){
-
-    }
-    void removeItemFromCart(){
-
-    }
-    String GetCart(){
-
-        
-        return "y";
     }
 }
