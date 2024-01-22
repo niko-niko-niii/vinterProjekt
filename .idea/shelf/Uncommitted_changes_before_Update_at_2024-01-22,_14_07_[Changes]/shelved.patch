@@ -1,0 +1,61 @@
+Index: Users/src/User_Menu.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.Scanner;\n\npublic class User_Menu {\n    static Scanner scaner = new Scanner(System.in);\n\n    public static void See_Users() {\n\n        //customer loop\n        System.out.println(\"Customer list\");\n        for (Customer customer : Users.getCustomers()) {\n            System.out.println(\"Customer: \" + customer.GetUserName());\n        }\n\n            //admin loop\n            System.out.println(\"admin list\");\n            for (Admin admin : Users.getAdmins()) {\n                System.out.println(\"Admin: \" + admin.GetUserName());\n            }\n\n\n\n    }\n    public static void logg_In(){\n        System.out.println(\"customer or admin\");\n        String answer =scaner.next();\n        loop:\n        while(true){\n        switch (answer.toLowerCase()) {\n            case \"customer\":\n                customer_logg_in();\n                break loop;\n\n            case \"admin\":\n                admin_logg_in();\n                break loop;\n\n            default: System.out.println(\"command isn't recognized\");\n            }\n        }\n    }\n\n\n    private static void customer_logg_in(){\n        System.out.println();\n\n        //user finder\n        for (Customer customer : Users.getCustomers()) {\n            System.out.println(\"Customer: \" + customer.GetUserName());\n        }\n    }\n\n    private static void admin_logg_in(){\n\n        //user finder\n        for (Admin admin : Users.getAdmins()) {\n            System.out.println(\"Admin: \" + admin.GetUserName());\n        }\n    }\n\n\n\n\n\n\n\n}
+===================================================================
+diff --git a/Users/src/User_Menu.java b/Users/src/User_Menu.java
+--- a/Users/src/User_Menu.java	
++++ b/Users/src/User_Menu.java	
+@@ -22,7 +22,8 @@
+     }
+     public static void logg_In(){
+         System.out.println("customer or admin");
+-        String answer =scaner.next();
++        String answer =scaner.nextLine();
++
+         loop:
+         while(true){
+         switch (answer.toLowerCase()) {
+@@ -52,10 +53,41 @@
+     private static void admin_logg_in(){
+ 
+         //user finder
++        System.out.println("your username please");
++        String username = scaner.next();
+         for (Admin admin : Users.getAdmins()) {
+-            System.out.println("Admin: " + admin.GetUserName());
++
++            if (admin.GetUserName().equalsIgnoreCase(username)) admin_Menu(admin);
++
++
++
+         }
+     }
++
++    private static void admin_Menu (Admin admin){
++        System.out.println("welcome in "+admin.GetUserName());
++        mLoop:
++        while(true){
++
++            System.out.println("logg out ");
++            scaner.next();
++            String choice = scaner.nextLine();
++
++            switch (choice.toLowerCase()) {
++                case"logg out":
++                break mLoop;
++
++                case"why": System.out.println("why");
++                break;
++
++                default:
++                    System.out.println("command isn't recognized");
++            }
++        }
++
++
++
++    }
+ 
+ 
+ 
