@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class User_Creator {
    static Scanner scanner = new Scanner(System.in);
-
+   //Users.createAdmin("vlad", "123");
 
 static void createUser(){
 

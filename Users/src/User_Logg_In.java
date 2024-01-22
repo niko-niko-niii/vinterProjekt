@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class User_Menu {
+public class User_Logg_In {
     static Scanner scaner = new Scanner(System.in);
 
     public static void See_Users() {
@@ -18,8 +18,9 @@ public class User_Menu {
             }
 
 
-
     }
+
+
     public static void logg_In(){
         System.out.println("customer or admin");
         String answer =scaner.next();

@@ -6,6 +6,8 @@ public class Users implements Serializable {
     String password;
     long ID;
 
+
+
     // Separate lists for customers and admins
     static ArrayList<Admin> admins = new ArrayList<>();
     static ArrayList<Customer> customers = new ArrayList<>();
@@ -58,5 +60,12 @@ public class Users implements Serializable {
     public long GetUserID(){
 
         return this.ID;
+    }
+
+    //User inlogg password checker
+
+    //User menu
+    public void menu(){
+
     }
 }

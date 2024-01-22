@@ -1,9 +1,9 @@
-import java.awt.desktop.UserSessionEvent;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Users.createAdmin("Vlad","123");
 // Menu loop
         menuLoop:
         do {
@@ -24,7 +24,7 @@ public class Main {
                    User_Creator.createUser();break;
 
                case "see users":
-                   User_Menu.See_Users(); break;
+                   User_Logg_In.See_Users(); break;
 
                case "logg in":
                    System.out.println("nope"); break;
