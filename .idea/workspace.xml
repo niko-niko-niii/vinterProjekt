@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee42e073-9217-4331-9cca-6ea5e9d17994" name="Changes" comment="added user creation">
+      <change afterPath="$PROJECT_DIR$/Main/src/Start_Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main/src/User_Creator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main/src/User_Creator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/src/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Users/src/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Users/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Users/src/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/src/User_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Users/src/User_Logg_In.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/src/User_Logg_In.java" beforeDir="false" afterPath="$PROJECT_DIR$/Users/src/User_Logg_In.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Users/src/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/Users/src/Users.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,19 +46,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -70,13 +73,6 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -96,7 +92,6 @@
       <workItem from="1705348561152" duration="1235000" />
       <workItem from="1705429618916" duration="1319000" />
       <workItem from="1705431004024" duration="3083000" />
-      <workItem from="1705916146231" duration="1602000" />
     </task>
     <task id="LOCAL-00001" summary="uh uh">
       <option name="closed" value="true" />
