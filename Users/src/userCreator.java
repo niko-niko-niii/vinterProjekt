@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class User_Creator {
+public class userCreator {
    static Scanner scanner = new Scanner(System.in);
 
    //user creator
@@ -18,7 +18,7 @@ static void createUser(){
     //using try catch i just used string + if case
     // it does the same thing but looks smaller and
     // more readable
-    String answer;
+    String answer; //initializer is here becouse string is used outside the loop
     do {
          answer = scanner.next(); //admin role giver
         //if user says "Y" theyll get admin if "N" theyll become customer
@@ -35,3 +35,5 @@ static void createUser(){
         case "n" -> Users.createCustomer(username, password); //customer creator
     }
 }}
+
+

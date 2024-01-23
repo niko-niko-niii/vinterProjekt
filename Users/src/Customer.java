@@ -31,11 +31,11 @@ static Scanner scanner =new Scanner(System.in);
                     break;
 
                 case "add item to cart":
-                    add_item();
+                    addItem();
                     break;
 
                 case "remove item from cart":
-                    remove_item();
+                    removeItem();
                     break;
 
                 case"logg out": break menuLoop;

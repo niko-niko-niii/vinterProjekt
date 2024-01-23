@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class User_Logg_In {
+public class userLogIn {
     static Scanner scaner = new Scanner(System.in);
 
-    public static void See_Users() {
+    public static void seeUsers() {
 
         //loops write out usernames
 
@@ -23,7 +23,7 @@ public class User_Logg_In {
     }
 
  //logg in start
-    public static void logg_in(){
+    public static void loggIn(){
 
         //let the inception begin
 
@@ -40,11 +40,11 @@ public class User_Logg_In {
 
         switch (admin.toLowerCase()) {
             case "customer":
-                customer_logg_in(username); // username sender to admin list
+                customerLoggIn(username); // username sender to admin list
                 break loop;
 
             case "admin":
-                admin_logg_in(username); // username sender to customer list
+                adminLoggIn(username); // username sender to customer list
                 break loop;
 
             default: System.out.println("command isn't recognized");
@@ -56,18 +56,17 @@ public class User_Logg_In {
 
 
 
-    private static void customer_logg_in(String username){
+    private static void customerLoggIn(String username){
 
         //customer finder
         //if the if loop does not find the name it sends you back to start menu
         // for loop is so it can find the correct user in the list
-
         for (Customer customer : Users.getCustomers()) {
             if(username.equalsIgnoreCase(customer.GetUserName())){
 
-                System.out.println("eneter your pasword:");
+                System.out.println("enter your password:");
                 String password= scaner.next(); //password getter
-                boolean success= customer.logg_In(username, password); // sends username and password to the customer
+                boolean success= customer.loggIn(username, password); // sends username and password to the customer
                 if (!success){ // if login fails, if statement informs you
                     System.out.println("login failed");
                 }
@@ -79,7 +78,7 @@ public class User_Logg_In {
     }
 
 
-    private static void admin_logg_in(String username){
+    private static void adminLoggIn(String username){
 
         //admin finder
         //if the if loop does not find the name it sends you back to start menu
@@ -89,7 +88,7 @@ public class User_Logg_In {
 
                 System.out.println("eneter your pasword:");
                 String password= scaner.next(); //password getter
-                boolean success= admin.logg_In(username, password); // sends username and password to the customer
+                boolean success= admin.loggIn(username, password); // sends username and password to the customer
                 if (!success){ // if login fails, if statement informs you
                     System.out.println("login failed");
                 }
