@@ -1,4 +1,4 @@
-import java.io.*; //fråga inte :3
+import java.io/*<-IQ*/.*; //fråga inte :3
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
@@ -6,11 +6,11 @@ import java.util.Scanner;
 
 
 public class Users implements Serializable {
-    //all variables that customers and admins sharre
+    //all variables that customers and admins share
    protected String username;
    protected String password;
    protected long ID;
-  protected ArrayList<Integer> cart = new ArrayList<Integer>();
+  protected ArrayList<Integer> cart = new ArrayList<>();
 
 
     // Separate lists for customers and admins
@@ -19,11 +19,11 @@ public class Users implements Serializable {
 
 
    //ID giver
-   private static long New_ID() {
+   private static long NewID() {
       //long so users dont share same ID
         long id = 0;
 
-       //todo: implement ser ID
+       //todo: implement .ser ID
 
        //ID counter
         id++;
@@ -34,14 +34,14 @@ public class Users implements Serializable {
     // Child factory
     // 1776 or 40K moment?
     public static void createAdmin(String username, String password) {
-        long ID = Users.New_ID(); //ID getter
+        long ID = Users.NewID(); //ID getter
         Admin admin = new Admin(username, password, ID); //new admin creator
         admins.add(admin); // Add admin to the admins list
     }
     //only reason Admin and customer are separated is because im to lazy to do logic
 
     public static void createCustomer(String username, String password) {
-        long ID = Users.New_ID(); //ID getter
+        long ID = Users.NewID(); //ID getter
         Customer customer = new Customer(username, password, ID);//new customer creator
         customers.add(customer); // Add customer to the customers list
     }
@@ -63,6 +63,7 @@ public class Users implements Serializable {
     }
 
     //ID Getter
+    @SuppressWarnings("unused")
     public  long GetUserID(){ return this.ID;}
 
 
@@ -79,7 +80,7 @@ public class Users implements Serializable {
     }
 
     // Log in function
-    protected boolean logg_In(String username, String password){
+    protected boolean loggIn(String username, String password){
        //checks username and password
     if (this.username.equalsIgnoreCase(username) && this.password.equals(password) ) {
         System.out.println("Hi "+username);
@@ -93,7 +94,7 @@ public class Users implements Serializable {
 
 
     //Add item to cart
-    public void add_item(){
+    public void addItem(){
         Random random =new Random();
 
        //temp on random cuz products arent done yet
@@ -102,7 +103,7 @@ public class Users implements Serializable {
         System.out.println("you added: "+item);
     }
     //removes item
-    public void remove_item(){
+    public void removeItem(){
         Scanner scanner =new Scanner(System.in);
        for(Integer item: cart){
            System.out.println(item);
@@ -145,14 +146,7 @@ public class Users implements Serializable {
                   // (and the ruler is  made from metal)
                   System.out.println("naughty naughty");
               }
-
            }
-
        }
-
-
     }
-
-
-
 }
